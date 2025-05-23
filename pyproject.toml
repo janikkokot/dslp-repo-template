@@ -1,0 +1,28 @@
+[project]
+name = "code"
+authors = [
+    {name = "Janik Kokot", email = "janik.kokot@i-med.ac.at"},
+]
+version="0.1.0"
+description = "A data science project package"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Private"
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "requests",
+    'importlib-metadata; python_version<"3.10"',
+]
+
+[tool.setuptools.packages.find]
+where = ["code"]
+include = []
+exclude = []
+namespaces = "false"
+
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
