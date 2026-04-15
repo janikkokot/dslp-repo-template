@@ -18,5 +18,6 @@ rsync() {
 rsync --archive --verbose --delete \
   --exclude .venv \
   --exclude .git \
+  --exclude .gitlab \
   --exclude .ruff-cache \
   hpc:$HPC $LOCAL
